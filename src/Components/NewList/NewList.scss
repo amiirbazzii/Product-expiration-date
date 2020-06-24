@@ -1,0 +1,68 @@
+.new-list {
+  position: fixed;
+  bottom: 20%;
+  left: 37%;
+  background-image: url('../../Static//Images/Bg-2.png');
+  border-radius: 10px;
+  box-shadow: 0 9px 30px 0px rgba(23, 42, 209, 0.3);
+  padding: 20px;
+  transition: 1s ease;
+  .list-title {
+    text-align: center;
+    color: #566597;
+    margin-bottom: -5px;
+  }
+
+  .list-inputs {
+    padding: 10px;
+    margin: 10px;
+
+    input {
+      color: #566597;
+      background-color: transparent;
+      width: 250px;
+      display: block;
+      margin: 25px auto;
+      border: 3px solid #ffffff;
+      border-radius: 7px;
+      padding: 8px 10px;
+      box-shadow: 0 2px 5px 0px rgba(23, 42, 209, 0.3);
+      transition: 0.4s;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+
+    .list-btn {
+      cursor: pointer;
+      border-radius: 20px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      width: 200px;
+      box-shadow: 0 5px 15px 0px rgba(23, 42, 209, 0.3);
+      transition: 0.3s;
+      &:hover {
+        box-shadow: none;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    left: 34%;
+  }
+  @media only screen and (max-width: 960px) {
+    left: 28%;
+  }
+  @media only screen and (max-width: 500px) {
+    left: 9%;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 400px) {
+    left: 5%;
+    padding: 10px;
+  }
+}
