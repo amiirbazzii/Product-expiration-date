@@ -8,7 +8,7 @@
   transition: box-shadow 0.3s, transform 0.3s;
   &:hover {
     background-color: rgba($color: #ffffff, $alpha: 0.7);
-    transform: rotate(1deg);
+    transform: rotate(2deg);
     box-shadow: 0 6px 15px rgba($color: #0a74ff, $alpha: 0.3);
   }
   .d-flex {
@@ -33,13 +33,13 @@
   }
   .item-btn {
     cursor: pointer;
-    background-color: #f55f5f;
+    background-color: #3da5eb;
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 7px 20px;
     border-radius: 20px;
     font-size: 12px;
-    box-shadow: 0 3px 10px rgba($color: #d62626, $alpha: 0.4);
+    box-shadow: 0 3px 10px rgba($color: #0059ff, $alpha: 0.4);
     transition: 0.3s;
     &:hover {
       box-shadow: none;
