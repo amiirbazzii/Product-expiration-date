@@ -15,7 +15,12 @@ export default class NewList extends Component {
         <form className='list-inputs'>
           <input type='text' name='text' placeholder='نام محصول را وارد کنید' />
           <input type='date' name='date' />
-          <input className='list-btn' type='button' value='اضافه کنید' />
+          <input
+            className='list-btn'
+            type='button'
+            value='اضافه کنید'
+            onClick={this.props.clicked}
+          />
         </form>
       </div>
     );

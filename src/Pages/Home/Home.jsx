@@ -37,7 +37,7 @@ export default class index extends Component {
         </header>
         <List />
         <AddBtn clicked={this.handleAddList} />
-        <NewList show={this.state.addList} sideBarClosed={this.closeSideBar} />
+        <NewList show={this.state.addList} clicked={this.handleAddList} />
       </div>
     );
   }
