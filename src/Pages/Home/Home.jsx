@@ -3,7 +3,7 @@ import moment from 'jalali-moment';
 
 import MenuBtn from '../../Components/MenuBtn/MenuBtn';
 import Time from '../../Components/Date/Date';
-import { today } from '../../Components/Date/Date';
+import { today, now } from '../../Components/Date/Date';
 import List from '../../Components/List/List';
 import SideBar from '../../Components/SideBar/SideBar';
 import AddBtn from '../../Components/AddBtn/AddBtn';
@@ -11,21 +11,17 @@ import NewList from '../../Components/NewList/NewList';
 
 import './Home.scss';
 
-const rnd = Math.floor(Math.random() * 10);
-
 export default class index extends Component {
   state = {
     sideBar: false,
     addList: false,
     listData: [
       {
-        id: 1,
         commodity: '1asclkmdc',
         expirationDate: 'jsnfkjsdnfsdf',
         entryDate: 65132135,
       },
       {
-        id: 2,
         commodity: '2ascknasdmc',
         expirationDate: 'jsnfkjsdnfsdf',
         entryDate: 65132135,
@@ -47,7 +43,6 @@ export default class index extends Component {
 
   handleSubmit = (item) => {
     const data = {
-      id: rnd,
       commodity: item.name,
       expirationDate: this.convertDate(item.date),
       entryDate: today,
@@ -55,16 +50,20 @@ export default class index extends Component {
     this.setState({ listData: [...this.state.listData, data] });
   };
 
-  handleDelete = (index) => {
-    console.log(index);
+  handleDelete = (id) => {
+    console.log(id);
 
     const newArr = [...this.state.listData];
-    newArr.splice(index, 1);
+
+    newArr.splice(id, 1);
     this.setState({ listData: newArr });
   };
 
   //Solar date
   convertDate = (date) => {
+    if (date == null) {
+      date = now;
+    }
     return moment(date, 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD');
   };
 

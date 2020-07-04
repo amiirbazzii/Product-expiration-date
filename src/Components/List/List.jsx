@@ -11,7 +11,7 @@ const List = (props) => {
       return (
         <ListItem
           key={index}
-          {...item}
+          id={index}
           commodity={item.commodity}
           entry={item.entryDate}
           expiration={item.expirationDate}
@@ -25,6 +25,7 @@ const List = (props) => {
   if (props.data.length > 0) {
     style = 'list';
   }
+
   return (
     <center className={style} clicked={props.clicked}>
       {list}

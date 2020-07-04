@@ -7,8 +7,9 @@ let year = new Date().getFullYear();
 let month = new Date().getMonth();
 let day = new Date().getDate();
 
-const date = `${year}/${month}/${day}`;
-export const today = moment(date, 'YYYY/MM/DD')
+export const now = `${year}/${month}/${day}`;
+
+export const today = moment(now, 'YYYY/MM/DD')
   .locale('fa')
   .format('YYYY/MM/DD');
 

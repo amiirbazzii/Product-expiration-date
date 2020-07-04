@@ -10,7 +10,7 @@ const Item = (props) => {
         <div
           className='item-btn'
           onClick={() => {
-            props.onDelete(props.index);
+            props.onDelete(props.id);
           }}
         >
           ×
