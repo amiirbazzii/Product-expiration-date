@@ -76,7 +76,7 @@ export default class index extends Component {
           <Time />
         </header>
         <List data={this.state.listData} onDelete={this.handleDelete} />
-        <AddBtn clicked={this.handleAddList} />
+        <AddBtn clicked={this.handleAddList} btnStyle={this.state.addList} />
         <NewList
           show={this.state.addList}
           clicked={this.handleAddList}

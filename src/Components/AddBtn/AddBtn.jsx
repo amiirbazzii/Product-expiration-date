@@ -5,23 +5,14 @@ import { ReactComponent as Add } from '../../Static/Icon/plus.svg';
 import './AddBtn.scss';
 
 const AddList = (props) => {
-  const [ToggleBtn, setToggleBtn] = useState(false);
-
   let styleBtn = 'svg';
-  if (ToggleBtn) {
+  if (props.btnStyle) {
     styleBtn = `${styleBtn} rotate`;
   }
-  const changeStyleBtn = () => {
-    setToggleBtn(!ToggleBtn);
-  };
 
-  const handleClick = () => {
-    changeStyleBtn();
-    props.clicked();
-  };
   return (
     <div className='add-icon'>
-      <div className='bg-icon-' onClick={handleClick}>
+      <div className='bg-icon-' onClick={props.clicked}>
         <Add className={styleBtn} />
       </div>
     </div>
