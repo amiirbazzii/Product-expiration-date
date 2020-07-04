@@ -32,15 +32,20 @@
     color: #566597;
   }
   .item-btn {
+    width: 8px;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    background-color: #3da5eb;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    padding: 7px 20px;
+    border: 2px solid #e7544f;
+    color: #e7544f;
+    padding: 8px 7px 6px 7px;
     border-radius: 20px;
-    font-size: 12px;
-    box-shadow: 0 3px 10px rgba($color: #0059ff, $alpha: 0.4);
+    font-size: 14px;
+    font-weight: 600;
     transition: 0.3s;
+
     &:hover {
       box-shadow: none;
     }

@@ -7,7 +7,14 @@ const Item = (props) => {
     <div className='item'>
       <div className='d-flex'>
         <h2 className='commodity'>{props.commodity}</h2>
-        <p className='item-btn'>اتمام محصول</p>
+        <div
+          className='item-btn'
+          onClick={() => {
+            props.onDelete(props.index);
+          }}
+        >
+          ×
+        </div>
       </div>
       <div className='d-flex'>
         <p className='entry'>تاریخ ورود: {props.entry}</p>
