@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { ReactComponent as Add } from '../../Static/Icon/plus.svg';
 
