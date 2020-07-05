@@ -48,12 +48,14 @@ export default class NewList extends Component {
           <input
             type='text'
             name='name'
+            value={this.state.name}
             placeholder='نام محصول را وارد کنید'
             onChange={(e) => this.setState({ name: e.target.value })}
           />
           <input
             type='date'
             name='date'
+            value={this.state.date}
             onChange={(e) => this.setState({ date: e.target.value })}
           />
           <button className='list-btn' onClick={this.handleClick}>
