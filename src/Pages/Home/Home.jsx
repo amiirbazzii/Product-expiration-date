@@ -3,7 +3,7 @@ import moment from 'jalali-moment';
 
 import MenuBtn from '../../Components/MenuBtn/MenuBtn';
 import Time from '../../Components/Date/Date';
-import { today, now } from '../../Components/Date/Date';
+import { today } from '../../Components/Date/Date';
 import List from '../../Components/List/List';
 import SideBar from '../../Components/SideBar/SideBar';
 import AddBtn from '../../Components/AddBtn/AddBtn';
@@ -40,8 +40,6 @@ export default class index extends Component {
   };
 
   handleDelete = (id) => {
-    console.log(id);
-
     const newArr = [...this.state.listData];
 
     newArr.splice(id, 1);
@@ -50,9 +48,6 @@ export default class index extends Component {
 
   //Solar date
   convertDate = (date) => {
-    if (date == null) {
-      date = now;
-    }
     return moment(date, 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD');
   };
 

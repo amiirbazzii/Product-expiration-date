@@ -7,7 +7,7 @@ import './NewList.scss';
 export default class NewList extends Component {
   state = {
     name: '',
-    date: null,
+    date: '',
   };
 
   handleClick = () => {
@@ -16,9 +16,9 @@ export default class NewList extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.name === '' || this.state.date === null) return;
+    if (this.state.name === '' || this.state.date === '') return;
     this.props.onFormSubmit(this.state);
-    this.setState({ name: '', date: null });
+    this.setState({ name: '', date: '' });
   };
 
   render() {
