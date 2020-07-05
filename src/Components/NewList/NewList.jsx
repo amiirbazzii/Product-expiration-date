@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Backdrop from '../Backdrop/Backdrop';
+
 import './NewList.scss';
 
 export default class NewList extends Component {
@@ -14,7 +16,7 @@ export default class NewList extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.term === '') return;
+    if (this.state.name === '' || this.state.date === null) return;
     this.props.onFormSubmit(this.state);
     this.setState({ name: '', date: null });
   };
@@ -24,12 +26,25 @@ export default class NewList extends Component {
       <div
         className='new-list'
         style={{
-          transform: this.props.show ? 'translateY(0)' : 'translateY(100vh)',
           opacity: this.props.show ? 1 : 0,
         }}
       >
-        <h3 className='list-title'>اضافه کردن محصول</h3>
-        <form className='list-inputs' onSubmit={this.handleSubmit}>
+        <Backdrop show={this.props.show} clicked={this.props.clicked} />
+        <form
+          className='list-inputs'
+          onSubmit={this.handleSubmit}
+          style={{
+            display: this.props.show ? 'block' : 'none',
+          }}
+        >
+          <h3
+            className='list-title'
+            style={{
+              display: this.props.show ? 'block' : 'none',
+            }}
+          >
+            اضافه کردن محصول
+          </h3>
           <input
             type='text'
             name='name'

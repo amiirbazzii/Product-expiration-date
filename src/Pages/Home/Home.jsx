@@ -15,18 +15,7 @@ export default class index extends Component {
   state = {
     sideBar: false,
     addList: false,
-    listData: [
-      {
-        commodity: '1asclkmdc',
-        expirationDate: 'jsnfkjsdnfsdf',
-        entryDate: 65132135,
-      },
-      {
-        commodity: '2ascknasdmc',
-        expirationDate: 'jsnfkjsdnfsdf',
-        entryDate: 65132135,
-      },
-    ],
+    listData: [],
   };
 
   showSideBar = () => {
