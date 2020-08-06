@@ -21,10 +21,10 @@ const sideBar = (props) => {
           }}
         >
           <div className='link'>
-            <a href='/'>صفحه اصلی</a>
+            <a href='/Product-expiration-date/'>صفحه اصلی</a>
           </div>
           <div className='link'>
-            <a href='/'>تماس با ما</a>
+            <a href='/Product-expiration-date/'>تماس با ما</a>
           </div>
         </div>
       </div>
