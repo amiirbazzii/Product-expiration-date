@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import DatePicker from './DataPicker/DataPicker';
 import Backdrop from '../Backdrop/Backdrop';
 
 import './NewList.scss';
@@ -10,15 +11,16 @@ export default class NewList extends Component {
     date: '',
   };
 
-  handleClick = () => {
-    this.props.clicked();
-  };
-
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.name === '' || this.state.date === '') return;
     this.props.onFormSubmit(this.state);
     this.setState({ name: '', date: '' });
+  };
+
+  handleDate = (e) => {
+    let expDateString = e.day + '-' + e.month + '-' + e.year;
+    this.setState({ date: expDateString });
   };
 
   render() {
@@ -48,17 +50,14 @@ export default class NewList extends Component {
           <input
             type='text'
             name='name'
+            className='newlist-input'
             value={this.state.name}
             placeholder='نام محصول را وارد کنید'
             onChange={(e) => this.setState({ name: e.target.value })}
           />
-          <input
-            type='date'
-            name='date'
-            value={this.state.date}
-            onChange={(e) => this.setState({ date: e.target.value })}
-          />
-          <button className='list-btn' onClick={this.handleClick}>
+
+          <DatePicker expDate={this.handleDate} />
+          <button className='list-btn' onClick={this.props.clicked}>
             اضافه کنید
           </button>
         </form>

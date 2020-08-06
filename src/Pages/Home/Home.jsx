@@ -33,7 +33,7 @@ export default class index extends Component {
   handleSubmit = (item) => {
     const data = {
       commodity: item.name,
-      expirationDate: this.convertDate(item.date),
+      expirationDate: item.date,
       entryDate: today,
     };
     this.setState({ listData: [...this.state.listData, data] });
@@ -44,11 +44,6 @@ export default class index extends Component {
 
     newArr.splice(id, 1);
     this.setState({ listData: newArr });
-  };
-
-  //Solar date
-  convertDate = (date) => {
-    return moment(date, 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD');
   };
 
   render() {

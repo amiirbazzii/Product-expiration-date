@@ -1,16 +1,12 @@
 .new-list {
   position: fixed;
-  bottom: 20%;
+  bottom: 10%;
   left: 37%;
-  // border-radius: 10px;
-  // box-shadow: 0 9px 30px 0px rgba(23, 42, 209, 0.3);
-  // padding: 20px;
+  padding: 20px;
   transition: 0.5s ease;
 
   .list-inputs {
-    // padding: 30px 10px;
     margin: 10px;
-    // border: 3px solid #3da5eb;
     border-radius: 10px;
 
     .list-title {
@@ -19,22 +15,27 @@
       margin-bottom: 30px;
     }
 
-    input,
-    button {
+    .newlist-input,
+    .list-btn {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 10px;
+      &:focus {
+        outline: 0;
+      }
+    }
+    input {
       color: #747474;
       background-color: #ffffff;
       width: 250px;
       display: block;
-      margin: 25px auto;
       border: 3px solid #3da5eb;
       border-radius: 7px;
       padding: 10px 10px;
-      // box-shadow: 0 2px 10px 0px rgba(28, 50, 255, 0.356);
-      transition: 0.4s;
+      box-shadow: 0 2px 10px 0px rgba(28, 50, 255, 0.356);
 
       &:focus {
         outline: 0;
-        box-shadow: none;
       }
     }
 
