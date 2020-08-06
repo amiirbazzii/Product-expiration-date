@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import moment from 'jalali-moment';
 
 import MenuBtn from '../../Components/MenuBtn/MenuBtn';
 import Time from '../../Components/Date/Date';
