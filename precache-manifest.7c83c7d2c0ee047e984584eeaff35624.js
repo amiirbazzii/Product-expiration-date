@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "229dc3109300e1025f2def8dc8be0f93",
+    "revision": "9e539cee3e4dc2806830155bcaf9ae9c",
     "url": "/Product-expiration-date/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Product-expiration-date/static/css/2.e5e4f238.chunk.css"
   },
   {
-    "revision": "ab71d110930f851f165c",
+    "revision": "ba3307341f1f818ed1d1",
     "url": "/Product-expiration-date/static/css/main.60ca547b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Product-expiration-date/static/js/2.0ef4b493.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab71d110930f851f165c",
-    "url": "/Product-expiration-date/static/js/main.479462c2.chunk.js"
+    "revision": "ba3307341f1f818ed1d1",
+    "url": "/Product-expiration-date/static/js/main.cd0556c9.chunk.js"
   },
   {
     "revision": "9bc5ade404979a9fb39a",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Product-expiration-date/static/css/main.60ca547b.chunk.css",
-    "main.js": "/Product-expiration-date/static/js/main.479462c2.chunk.js",
-    "main.js.map": "/Product-expiration-date/static/js/main.479462c2.chunk.js.map",
+    "main.js": "/Product-expiration-date/static/js/main.cd0556c9.chunk.js",
+    "main.js.map": "/Product-expiration-date/static/js/main.cd0556c9.chunk.js.map",
     "runtime-main.js": "/Product-expiration-date/static/js/runtime-main.c2a9bd04.js",
     "runtime-main.js.map": "/Product-expiration-date/static/js/runtime-main.c2a9bd04.js.map",
     "static/css/2.e5e4f238.chunk.css": "/Product-expiration-date/static/css/2.e5e4f238.chunk.css",
     "static/js/2.0ef4b493.chunk.js": "/Product-expiration-date/static/js/2.0ef4b493.chunk.js",
     "static/js/2.0ef4b493.chunk.js.map": "/Product-expiration-date/static/js/2.0ef4b493.chunk.js.map",
     "index.html": "/Product-expiration-date/index.html",
-    "precache-manifest.66f1c829313ff54d6758239a04521cb1.js": "/Product-expiration-date/precache-manifest.66f1c829313ff54d6758239a04521cb1.js",
+    "precache-manifest.7c83c7d2c0ee047e984584eeaff35624.js": "/Product-expiration-date/precache-manifest.7c83c7d2c0ee047e984584eeaff35624.js",
     "service-worker.js": "/Product-expiration-date/service-worker.js",
     "static/css/2.e5e4f238.chunk.css.map": "/Product-expiration-date/static/css/2.e5e4f238.chunk.css.map",
     "static/css/main.60ca547b.chunk.css.map": "/Product-expiration-date/static/css/main.60ca547b.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.e5e4f238.chunk.css",
     "static/js/2.0ef4b493.chunk.js",
     "static/css/main.60ca547b.chunk.css",
-    "static/js/main.479462c2.chunk.js"
+    "static/js/main.cd0556c9.chunk.js"
   ]
 }
